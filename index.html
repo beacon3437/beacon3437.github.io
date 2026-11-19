@@ -1,0 +1,1609 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>白桃少女小布丁 - 原创影像品牌,记录甜软日常的温柔力量</title>
+<meta name="description" content="白桃少女小布丁官方网站：以原创影像记录甜软日常与治愈生活，汇聚创作者、内容生态与品牌故事，打造值得信赖的高品质视频内容平台。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff9db5'/%3E%3Cstop offset='1' stop-color='%23ffd6a5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Cpath d='M32 14c8 0 14 6 14 14s-6 14-14 14-14-6-14-14 6-14 14-14z' fill='%23fff' opacity='.85'/%3E%3Ccircle cx='27' cy='26' r='2.6' fill='%23ff7a9c'/%3E%3Ccircle cx='37' cy='26' r='2.6' fill='%23ff7a9c'/%3E%3Cpath d='M27 33c2 2.4 8 2.4 10 0' stroke='%23ff7a9c' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --bx-pink:#ff7a9c;
+    --bx-pink-soft:#ffd9e2;
+    --bx-peach:#ffb489;
+    --bx-cream:#fff7f2;
+    --bx-ink:#3d2c33;
+    --bx-ink-soft:#7a6770;
+    --bx-lilac:#c3b4f0;
+    --bx-mint:#a8e0cb;
+    --bx-line:#f3dcd9;
+    --bx-card:#ffffff;
+    --bx-shadow:0 14px 34px -18px rgba(200,110,140,.42);
+    --bx-radius:20px;
+    --bx-wrap:1180px;
+    --bx-head-h:64px;
+    --bx-bar-h:38px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+    color:var(--bx-ink);
+    background:
+      radial-gradient(900px 460px at 88% -6%, #ffe8ee 0%, rgba(255,232,238,0) 62%),
+      radial-gradient(760px 420px at 4% 22%, #fdf1e6 0%, rgba(253,241,230,0) 58%),
+      var(--bx-cream);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+  h1,h2,h3,h4{margin:0;line-height:1.32;font-weight:800;letter-spacing:-.2px;}
+  p{margin:0;}
+  ul{margin:0;padding:0;list-style:none;}
+  :target{scroll-margin-top:calc(var(--bx-head-h) + var(--bx-bar-h) + 16px);}
+  section[id]{scroll-margin-top:calc(var(--bx-head-h) + var(--bx-bar-h) + 16px);}
+
+  .bx-wrap{width:min(100% - 40px,var(--bx-wrap));margin-inline:auto;}
+
+  /* ============ 公告条 + 吸顶头 ============ */
+  .bx-sticky{position:sticky;top:0;z-index:60;}
+  .bx-bulletin{
+    height:var(--bx-bar-h);
+    display:flex;align-items:center;
+    background:linear-gradient(90deg,#ff9db5,#ffb489 58%,#c3b4f0);
+    color:#4a2530;font-size:13.5px;font-weight:700;
+    overflow:hidden;
+  }
+  .bx-bulletin .bx-wrap{display:flex;align-items:center;gap:12px;min-width:0;}
+  .bx-bulletin-tag{
+    flex:none;background:rgba(255,255,255,.72);border-radius:999px;
+    padding:1px 10px;font-size:11.5px;letter-spacing:.6px;
+  }
+  .bx-bulletin-list{
+    display:flex;gap:34px;white-space:nowrap;overflow:hidden;
+    animation:bx-marquee 26s linear infinite;
+  }
+  .bx-bulletin-list span{opacity:.92;}
+  .bx-bulletin:hover .bx-bulletin-list{animation-play-state:paused;}
+  @keyframes bx-marquee{
+    0%{transform:translateX(0);}
+    100%{transform:translateX(-50%);}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .bx-bulletin-list{animation:none;}
+  }
+
+  .bx-head{
+    height:var(--bx-head-h);
+    background:rgba(255,247,242,.9);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--bx-line);
+  }
+  .bx-head .bx-wrap{height:100%;display:flex;align-items:center;gap:18px;}
+  .bx-logo{display:flex;align-items:center;gap:10px;flex:none;}
+  .bx-logo-mark{
+    width:38px;height:38px;border-radius:12px;
+    background:linear-gradient(135deg,#ff9db5,#ffb489);
+    display:grid;place-items:center;color:#fff;font-weight:900;font-size:15px;
+    box-shadow:0 8px 18px -10px #ff7a9c;
+  }
+  .bx-logo-text{display:flex;flex-direction:column;line-height:1.15;}
+  .bx-logo-text b{font-size:15.5px;letter-spacing:.4px;}
+  .bx-logo-text small{font-size:10.5px;color:var(--bx-ink-soft);letter-spacing:1.6px;}
+
+  .bx-nav{margin-left:auto;display:flex;align-items:center;gap:2px;}
+  .bx-nav a{
+    padding:8px 12px;border-radius:10px;font-size:14px;font-weight:600;
+    color:var(--bx-ink-soft);transition:.22s;
+  }
+  .bx-nav a:hover{color:var(--bx-pink);background:#fff1f4;}
+
+  .bx-search{
+    flex:none;display:flex;align-items:center;gap:6px;
+    background:#fff;border:1px solid var(--bx-line);border-radius:999px;
+    padding:5px 6px 5px 14px;transition:.22s;
+  }
+  .bx-search:focus-within{border-color:var(--bx-pink);box-shadow:0 0 0 4px #ffe6ec;}
+  .bx-search input{
+    border:none;outline:none;background:none;width:132px;font-size:13.5px;color:var(--bx-ink);
+  }
+  .bx-search input::placeholder{color:#c3b2ba;}
+  .bx-search button{
+    width:28px;height:28px;border-radius:50%;background:var(--bx-pink);color:#fff;
+    display:grid;place-items:center;font-size:13px;flex:none;
+  }
+  .bx-search-hint{
+    position:absolute;margin-top:6px;background:#fff;border:1px solid var(--bx-line);
+    border-radius:12px;box-shadow:var(--bx-shadow);padding:8px 12px;font-size:12.5px;
+    color:var(--bx-ink-soft);display:none;z-index:70;
+  }
+  .bx-search-hint.is-on{display:block;}
+
+  .bx-burger{
+    display:none;width:38px;height:38px;border-radius:10px;
+    border:1px solid var(--bx-line);background:#fff;position:relative;
+  }
+  .bx-burger span{
+    position:absolute;left:10px;width:18px;height:2px;background:var(--bx-ink);border-radius:2px;transition:.25s;
+  }
+  .bx-burger span:nth-child(1){top:13px;}
+  .bx-burger span:nth-child(2){top:18px;}
+  .bx-burger span:nth-child(3){top:23px;}
+  .bx-burger.is-open span:nth-child(1){transform:translateY(5px) rotate(45deg);}
+  .bx-burger.is-open span:nth-child(2){opacity:0;}
+  .bx-burger.is-open span:nth-child(3){transform:translateY(-5px) rotate(-45deg);}
+
+  @media (max-width:900px){
+    .bx-nav{
+      position:absolute;top:calc(var(--bx-head-h) + var(--bx-bar-h));left:0;right:0;
+      flex-direction:column;align-items:stretch;gap:0;
+      background:#fffaf7;border-bottom:1px solid var(--bx-line);
+      padding:8px 20px 16px;display:none;margin:0;
+    }
+    .bx-nav.is-open{display:flex;}
+    .bx-nav a{padding:11px 8px;}
+    .bx-burger{display:block;order:99;}
+    .bx-search{order:98;margin-left:auto;}
+    .bx-search input{width:96px;}
+  }
+  @media (max-width:520px){
+    .bx-search input{width:70px;}
+    .bx-logo-text small{display:none;}
+  }
+
+  /* ============ 通用区块 ============ */
+  .bx-sec{padding:76px 0;}
+  .bx-sec-alt{background:linear-gradient(180deg,#fffaf7,#fff4f0);border-block:1px solid var(--bx-line);}
+  .bx-sec-head{max-width:720px;margin-bottom:38px;}
+  .bx-eyebrow{
+    display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:800;
+    letter-spacing:2.4px;color:var(--bx-pink);text-transform:uppercase;margin-bottom:12px;
+  }
+  .bx-eyebrow::before{content:"";width:22px;height:2px;border-radius:2px;background:var(--bx-pink);}
+  .bx-sec-head h2{font-size:clamp(23px,3vw,33px);}
+  .bx-sec-head p{margin-top:12px;color:var(--bx-ink-soft);font-size:14.8px;}
+
+  .bx-btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:11px 22px;border-radius:999px;font-size:14px;font-weight:700;
+    transition:.22s;border:1px solid transparent;
+  }
+  .bx-btn-main{background:linear-gradient(135deg,#ff8aa6,#ffab84);color:#fff;box-shadow:0 12px 24px -14px #ff7a9c;}
+  .bx-btn-main:hover{transform:translateY(-2px);box-shadow:0 18px 30px -16px #ff7a9c;}
+  .bx-btn-ghost{background:#fff;border-color:var(--bx-line);color:var(--bx-ink);}
+  .bx-btn-ghost:hover{border-color:var(--bx-pink);color:var(--bx-pink);}
+
+  /* ============ 首屏 ============ */
+  .bx-hero{padding:64px 0 40px;position:relative;overflow:hidden;}
+  .bx-hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:48px;align-items:center;}
+  .bx-hero-badge{
+    display:inline-flex;align-items:center;gap:8px;background:#fff;
+    border:1px solid var(--bx-line);border-radius:999px;padding:5px 14px;
+    font-size:12.5px;font-weight:700;color:var(--bx-pink);box-shadow:var(--bx-shadow);
+  }
+  .bx-hero-badge i{width:6px;height:6px;border-radius:50%;background:var(--bx-pink);display:block;}
+  h1{
+    font-size:clamp(36px,5.4vw,62px);
+    margin:18px 0 6px;
+    background:linear-gradient(120deg,#ff7a9c,#ffa884 46%,#b39ef0);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    letter-spacing:-1.6px;
+  }
+  .bx-hero-sub{font-size:clamp(15px,1.6vw,18px);font-weight:700;color:var(--bx-ink);}
+  .bx-hero-desc{margin-top:16px;font-size:14.8px;color:var(--bx-ink-soft);max-width:560px;}
+  .bx-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;}
+  .bx-hero-stats{display:flex;flex-wrap:wrap;gap:30px;margin-top:34px;padding-top:24px;border-top:1px dashed var(--bx-line);}
+  .bx-hero-stat b{display:block;font-size:25px;letter-spacing:-.6px;}
+  .bx-hero-stat span{font-size:12.5px;color:var(--bx-ink-soft);}
+
+  .bx-hero-art{position:relative;border-radius:28px;overflow:hidden;box-shadow:0 30px 60px -34px rgba(180,100,130,.55);}
+  .bx-hero-art img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3.4;}
+  .bx-hero-float{
+    position:absolute;left:18px;bottom:18px;right:18px;
+    background:rgba(255,255,255,.9);backdrop-filter:blur(8px);
+    border-radius:16px;padding:12px 16px;display:flex;align-items:center;gap:12px;
+  }
+  .bx-hero-float .bx-avatar{width:38px;height:38px;border-radius:50%;flex:none;}
+  .bx-hero-float b{font-size:13.5px;display:block;}
+  .bx-hero-float small{color:var(--bx-ink-soft);font-size:11.5px;}
+  .bx-live-dot{width:8px;height:8px;border-radius:50%;background:#ff5c8a;margin-left:auto;box-shadow:0 0 0 4px #ffdbe4;}
+
+  .bx-avatar{
+    display:grid;place-items:center;border-radius:50%;color:#fff;font-weight:800;
+    font-size:14px;background:linear-gradient(135deg,#ff9db5,#ffb489);flex:none;
+  }
+  .bx-avatar-v1{background:linear-gradient(135deg,#ffb0c6,#c3b4f0);}
+  .bx-avatar-v2{background:linear-gradient(135deg,#ffc78f,#ff8aa6);}
+  .bx-avatar-v3{background:linear-gradient(135deg,#a8e0cb,#7fc3d9);}
+  .bx-avatar-v4{background:linear-gradient(135deg,#c3b4f0,#8f9dff);}
+  .bx-avatar-v5{background:linear-gradient(135deg,#ffd08a,#ffa06b);}
+
+  @media (max-width:960px){
+    .bx-hero-grid{grid-template-columns:1fr;gap:34px;}
+    .bx-hero{padding-top:44px;}
+  }
+
+  /* ============ 关键词解析 长文 ============ */
+  .bx-about{display:grid;grid-template-columns:.72fr 1.28fr;gap:46px;align-items:start;}
+  .bx-about-side{position:sticky;top:calc(var(--bx-head-h) + var(--bx-bar-h) + 24px);}
+  .bx-about-side h2{font-size:clamp(22px,2.6vw,29px);}
+  .bx-about-side p{margin-top:14px;color:var(--bx-ink-soft);font-size:14.5px;}
+  .bx-about-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;}
+  .bx-chip{
+    font-size:12px;font-weight:700;padding:5px 12px;border-radius:999px;
+    background:#fff0f4;color:#d95a7d;border:1px solid #ffdce6;
+  }
+  .bx-prose{font-size:15px;color:#5b4952;}
+  .bx-prose p{margin-bottom:16px;}
+  .bx-prose h3{font-size:18.5px;margin:26px 0 10px;color:var(--bx-ink);}
+  .bx-prose strong{color:#d95a7d;}
+  .bx-quote{
+    margin:22px 0;padding:18px 22px;border-radius:16px;
+    background:linear-gradient(135deg,#fff2f6,#fdf3ec);
+    border-left:4px solid var(--bx-pink);font-size:14.5px;color:#7a5563;
+  }
+  @media (max-width:900px){
+    .bx-about{grid-template-columns:1fr;gap:26px;}
+    .bx-about-side{position:static;}
+  }
+
+  /* ============ 焦点内容 ============ */
+  .bx-focus-grid{display:grid;grid-template-columns:1.32fr 1fr;gap:24px;}
+  .bx-focus-main{
+    position:relative;border-radius:var(--bx-radius);overflow:hidden;
+    box-shadow:0 26px 50px -30px rgba(180,100,130,.6);
+  }
+  .bx-focus-main img{width:100%;aspect-ratio:16/10.4;object-fit:cover;}
+  .bx-focus-main-body{
+    position:absolute;inset:auto 0 0 0;padding:26px 26px 22px;color:#fff;
+    background:linear-gradient(0deg,rgba(46,22,32,.9),rgba(46,22,32,.55) 55%,transparent);
+  }
+  .bx-tagline{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:1.4px;
+    background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.4);
+    padding:3px 10px;border-radius:999px;margin-bottom:10px;}
+  .bx-focus-main-body h3{font-size:clamp(19px,2.2vw,25px);}
+  .bx-focus-main-body p{font-size:13.5px;opacity:.86;margin-top:8px;}
+  .bx-meta{display:flex;flex-wrap:wrap;align-items:center;gap:14px;font-size:12px;opacity:.9;margin-top:12px;}
+  .bx-focus-side{display:grid;gap:16px;}
+  .bx-mini-card{
+    display:flex;gap:14px;background:#fff;border:1px solid var(--bx-line);
+    border-radius:16px;padding:12px;transition:.24s;
+  }
+  .bx-mini-card:hover{transform:translateY(-3px);box-shadow:var(--bx-shadow);border-color:#ffd3de;}
+  .bx-mini-card img{width:118px;aspect-ratio:16/10;object-fit:cover;border-radius:11px;flex:none;}
+  .bx-mini-card h4{font-size:14px;line-height:1.45;}
+  .bx-mini-card p{font-size:12px;color:var(--bx-ink-soft);margin-top:5px;}
+  .bx-mini-card .bx-meta{margin-top:6px;color:var(--bx-ink-soft);opacity:1;}
+  @media (max-width:900px){
+    .bx-focus-grid{grid-template-columns:1fr;}
+    .bx-mini-card img{width:100px;}
+  }
+
+  /* ============ 视频流 ============ */
+  .bx-filter-row{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:26px;}
+  .bx-filter{
+    font-size:13px;font-weight:700;padding:7px 16px;border-radius:999px;
+    background:#fff;border:1px solid var(--bx-line);color:var(--bx-ink-soft);transition:.2s;
+  }
+  .bx-filter:hover{border-color:var(--bx-pink);color:var(--bx-pink);}
+  .bx-filter.is-active{background:linear-gradient(135deg,#ff8aa6,#ffab84);color:#fff;border-color:transparent;}
+  .bx-video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .bx-video-card{
+    background:var(--bx-card);border:1px solid var(--bx-line);border-radius:18px;
+    overflow:hidden;transition:.26s;display:flex;flex-direction:column;
+  }
+  .bx-video-card:hover{transform:translateY(-5px);box-shadow:0 26px 44px -30px rgba(180,100,130,.65);border-color:#ffd3de;}
+  .bx-video-thumb{position:relative;}
+  .bx-video-thumb img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+  .bx-play{
+    position:absolute;inset:0;display:grid;place-items:center;transition:.25s;
+  }
+  .bx-play i{
+    width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.9);
+    display:grid;place-items:center;box-shadow:0 8px 20px -8px rgba(0,0,0,.4);transition:.25s;
+  }
+  .bx-play i::after{content:"";border-style:solid;border-width:7px 0 7px 11px;border-color:transparent transparent transparent #ff7a9c;margin-left:3px;}
+  .bx-video-card:hover .bx-play i{transform:scale(1.1);background:#fff;}
+  .bx-thumb-tag{
+    position:absolute;left:10px;top:10px;font-size:11px;font-weight:800;
+    padding:3px 9px;border-radius:999px;background:rgba(255,255,255,.92);color:#d95a7d;
+  }
+  .bx-thumb-dur{
+    position:absolute;right:10px;bottom:10px;font-size:11px;font-weight:700;color:#fff;
+    background:rgba(40,20,28,.66);padding:2px 8px;border-radius:6px;
+  }
+  .bx-video-body{padding:14px 15px 15px;display:flex;flex-direction:column;gap:8px;flex:1;}
+  .bx-video-body h3{font-size:14.6px;line-height:1.5;}
+  .bx-video-body p{font-size:12.5px;color:var(--bx-ink-soft);}
+  .bx-video-author{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--bx-ink-soft);}
+  .bx-video-author .bx-avatar{width:24px;height:24px;font-size:10.5px;}
+  .bx-video-foot{
+    display:flex;align-items:center;gap:10px;margin-top:auto;padding-top:10px;
+    border-top:1px dashed var(--bx-line);font-size:12px;color:var(--bx-ink-soft);
+  }
+  .bx-act{display:inline-flex;align-items:center;gap:4px;padding:3px 6px;border-radius:8px;transition:.2s;font-size:12px;}
+  .bx-act:hover{background:#fff0f4;color:var(--bx-pink);}
+  .bx-act.is-on{color:var(--bx-pink);font-weight:800;}
+  .bx-act-share{margin-left:auto;}
+  @media (max-width:900px){.bx-video-grid{grid-template-columns:repeat(2,1fr);gap:16px;}}
+  @media (max-width:600px){.bx-video-grid{grid-template-columns:1fr;}}
+
+  /* ============ 专题 ============ */
+  .bx-topic-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+  .bx-topic{
+    position:relative;border-radius:18px;overflow:hidden;min-height:212px;
+    display:flex;flex-direction:column;justify-content:flex-end;
+    padding:18px;color:#fff;transition:.26s;
+  }
+  .bx-topic:nth-child(1){grid-column:span 2;min-height:264px;}
+  .bx-topic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:.5s;}
+  .bx-topic::after{content:"";position:absolute;inset:0;z-index:-1;
+    background:linear-gradient(0deg,rgba(40,18,28,.86),rgba(40,18,28,.18) 64%,rgba(40,18,28,.05));}
+  .bx-topic:hover img{transform:scale(1.06);}
+  .bx-topic h3{font-size:16.5px;}
+  .bx-topic p{font-size:12.5px;opacity:.86;margin-top:6px;}
+  .bx-topic-state{
+    align-self:flex-start;font-size:11px;font-weight:800;padding:3px 9px;border-radius:999px;
+    background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.38);margin-bottom:9px;
+  }
+  @media (max-width:860px){.bx-topic-grid{grid-template-columns:repeat(2,1fr);}.bx-topic:nth-child(1){grid-column:span 2;}}
+
+  /* ============ 创作者 ============ */
+  .bx-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+  .bx-creator{
+    background:#fff;border:1px solid var(--bx-line);border-radius:20px;
+    padding:22px 18px;text-align:center;transition:.26s;
+  }
+  .bx-creator:hover{transform:translateY(-5px);box-shadow:var(--bx-shadow);border-color:#ffd3de;}
+  .bx-creator .bx-avatar{width:64px;height:64px;font-size:21px;margin:0 auto 12px;}
+  .bx-creator h3{font-size:15.5px;}
+  .bx-creator .bx-field{font-size:11.5px;font-weight:800;color:var(--bx-pink);letter-spacing:.8px;margin-top:4px;}
+  .bx-creator p{font-size:12.5px;color:var(--bx-ink-soft);margin-top:10px;min-height:56px;}
+  .bx-creator-nums{display:flex;justify-content:center;gap:16px;font-size:12px;color:var(--bx-ink-soft);margin-top:10px;padding-top:12px;border-top:1px dashed var(--bx-line);}
+  .bx-creator-nums b{display:block;color:var(--bx-ink);font-size:14px;}
+  .bx-creator-more{margin-top:14px;font-size:12.5px;font-weight:800;color:var(--bx-pink);}
+  @media (max-width:900px){.bx-creator-grid{grid-template-columns:repeat(2,1fr);gap:16px;}}
+  @media (max-width:480px){.bx-creator-grid{grid-template-columns:1fr;}}
+
+  /* ============ 作品墙 ============ */
+  .bx-wall{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;}
+  .bx-wall figure{
+    margin:0;border-radius:16px;overflow:hidden;position:relative;
+    box-shadow:0 14px 30px -22px rgba(180,100,130,.7);
+  }
+  .bx-wall figure img{width:100%;height:100%;object-fit:cover;transition:.45s;}
+  .bx-wall figure:hover img{transform:scale(1.07);}
+  .bx-wall figcaption{
+    position:absolute;inset:auto 0 0 0;padding:10px 12px;font-size:11.5px;color:#fff;
+    background:linear-gradient(0deg,rgba(40,18,28,.82),transparent);
+  }
+  .bx-wall .bx-w-a{grid-column:span 3;aspect-ratio:16/9;}
+  .bx-wall .bx-w-b{grid-column:span 2;aspect-ratio:4/3;}
+  .bx-wall .bx-w-c{grid-column:span 2;aspect-ratio:1;}
+  .bx-wall .bx-w-d{grid-column:span 3;aspect-ratio:16/8;}
+  @media (max-width:860px){
+    .bx-wall{grid-template-columns:repeat(2,1fr);}
+    .bx-wall .bx-w-a,.bx-wall .bx-w-d,.bx-wall .bx-w-b,.bx-wall .bx-w-c{grid-column:span 1;aspect-ratio:4/3;}
+  }
+
+  /* ============ 随笔 ============ */
+  .bx-note-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .bx-note{
+    background:#fff;border-radius:18px;padding:24px;border:1px solid var(--bx-line);
+    position:relative;transition:.26s;
+  }
+  .bx-note:hover{box-shadow:var(--bx-shadow);transform:translateY(-4px);}
+  .bx-note::before{
+    content:"";position:absolute;left:24px;top:0;width:38px;height:4px;border-radius:0 0 4px 4px;
+    background:linear-gradient(90deg,#ff8aa6,#ffb489);
+  }
+  .bx-note h3{font-size:16px;margin-top:8px;}
+  .bx-note p{font-size:13.5px;color:var(--bx-ink-soft);margin-top:10px;}
+  .bx-note footer{font-size:12px;color:#b08f9a;margin-top:14px;display:flex;align-items:center;gap:8px;}
+  @media (max-width:860px){.bx-note-grid{grid-template-columns:1fr;}}
+
+  /* ============ 评价 ============ */
+  .bx-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .bx-review{
+    background:#fff;border:1px solid var(--bx-line);border-radius:18px;padding:22px;
+    display:flex;flex-direction:column;gap:12px;
+  }
+  .bx-review-top{display:flex;align-items:center;gap:10px;}
+  .bx-review-top .bx-avatar{width:38px;height:38px;font-size:13px;}
+  .bx-review-top b{font-size:13.5px;display:block;}
+  .bx-review-top small{font-size:11.5px;color:#b08f9a;}
+  .bx-review p{font-size:13.5px;color:#5b4952;}
+  .bx-stars{font-size:12px;color:#ffab48;letter-spacing:1px;margin-left:auto;}
+  @media (max-width:860px){.bx-review-grid{grid-template-columns:1fr;}}
+
+  /* ============ 动效 / 辅助 ============ */
+  .bx-news{display:grid;gap:0;}
+  .bx-news li{
+    display:grid;grid-template-columns:96px 1fr auto;gap:16px;align-items:center;
+    padding:16px 4px;border-bottom:1px dashed var(--bx-line);transition:.2s;
+  }
+  .bx-news li:hover{background:#fff6f8;}
+  .bx-news time{font-size:12.5px;color:#b08f9a;font-variant-numeric:tabular-nums;}
+  .bx-news b{font-size:14.3px;font-weight:700;}
+  .bx-news span{font-size:11.5px;font-weight:800;color:var(--bx-pink);background:#fff0f4;padding:2px 9px;border-radius:999px;}
+  @media (max-width:620px){.bx-news li{grid-template-columns:1fr;gap:4px;}}
+
+  .bx-partner-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px;}
+  .bx-partner{
+    flex:1 1 150px;text-align:center;font-size:13px;font-weight:800;color:#8a727c;
+    background:#fff;border:1px solid var(--bx-line);border-radius:14px;padding:16px 12px;transition:.24s;
+  }
+  .bx-partner:hover{color:var(--bx-pink);border-color:#ffd3de;transform:translateY(-3px);}
+
+  .bx-faq{display:grid;gap:10px;max-width:880px;}
+  .bx-faq details{
+    background:#fff;border:1px solid var(--bx-line);border-radius:14px;padding:0 18px;transition:.2s;
+  }
+  .bx-faq details[open]{border-color:#ffd3de;box-shadow:var(--bx-shadow);}
+  .bx-faq summary{
+    list-style:none;cursor:pointer;padding:15px 0;font-size:14.2px;font-weight:700;
+    display:flex;align-items:center;gap:10px;
+  }
+  .bx-faq summary::-webkit-details-marker{display:none;}
+  .bx-faq summary::before{content:"+";color:var(--bx-pink);font-weight:900;font-size:16px;width:16px;}
+  .bx-faq details[open] summary::before{content:"−";}
+  .bx-faq details p{font-size:13.5px;color:var(--bx-ink-soft);padding-bottom:16px;}
+
+  .bx-cta{
+    background:linear-gradient(120deg,#ff9db5,#ffb489 52%,#c3b4f0);
+    border-radius:26px;padding:48px 38px;color:#4a2530;text-align:center;
+    box-shadow:0 30px 60px -36px rgba(200,100,140,.8);
+  }
+  .bx-cta h2{font-size:clamp(22px,3vw,32px);}
+  .bx-cta p{margin-top:12px;font-size:14.5px;opacity:.86;}
+  .bx-cta-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:24px;}
+  .bx-cta .bx-btn-main{background:#4a2530;box-shadow:0 14px 26px -16px rgba(0,0,0,.5);}
+  .bx-cta .bx-btn-ghost{background:rgba(255,255,255,.86);border-color:transparent;}
+
+  /* ============ 页脚 ============ */
+  .bx-foot{background:#2e1a23;color:#e7d5dc;padding:56px 0 26px;margin-top:0;}
+  .bx-foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:34px;}
+  .bx-foot h4{font-size:13.5px;letter-spacing:1.4px;color:#fff;margin-bottom:14px;}
+  .bx-foot p,.bx-foot a,.bx-foot li{font-size:12.8px;color:#c8aeb8;line-height:2;}
+  .bx-foot a:hover{color:#ffb0c6;}
+  .bx-foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+  .bx-foot-brand .bx-logo-mark{width:34px;height:34px;border-radius:10px;font-size:13px;}
+  .bx-foot-brand b{color:#fff;font-size:15px;}
+  .bx-foot-bottom{
+    margin-top:36px;padding-top:20px;border-top:1px solid #452936;
+    display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:12px;color:#a98c99;
+  }
+
+  /* ============ 弹窗 / Toast ============ */
+  .bx-modal-mask{
+    position:fixed;inset:0;background:rgba(46,22,32,.5);backdrop-filter:blur(4px);
+    display:none;align-items:center;justify-content:center;padding:22px;z-index:120;
+  }
+  .bx-modal-mask.is-on{display:flex;}
+  .bx-modal{
+    background:#fff;border-radius:22px;max-width:480px;width:100%;padding:28px;
+    box-shadow:0 40px 80px -30px rgba(0,0,0,.5);position:relative;
+    animation:bx-pop .26s ease-out;
+  }
+  @keyframes bx-pop{from{transform:translateY(16px) scale(.97);opacity:0;}to{transform:none;opacity:1;}}
+  .bx-modal h3{font-size:19px;}
+  .bx-modal p{font-size:13.5px;color:var(--bx-ink-soft);margin-top:10px;}
+  .bx-modal-close{
+    position:absolute;right:14px;top:14px;width:30px;height:30px;border-radius:50%;
+    background:#fbf0f2;color:#b08f9a;font-size:16px;display:grid;place-items:center;
+  }
+  .bx-modal-actions{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap;}
+  .bx-share-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
+  .bx-share-chip{
+    padding:8px 16px;border-radius:999px;background:#fdf2f5;border:1px solid var(--bx-line);
+    font-size:13px;font-weight:700;color:#7a5563;transition:.2s;
+  }
+  .bx-share-chip:hover{background:var(--bx-pink);color:#fff;border-color:transparent;}
+
+  .bx-toast{
+    position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+    background:#3d2c33;color:#fff;font-size:13px;font-weight:600;
+    padding:11px 20px;border-radius:999px;opacity:0;pointer-events:none;
+    transition:.3s;z-index:200;box-shadow:0 20px 40px -18px rgba(0,0,0,.6);
+  }
+  .bx-toast.is-on{opacity:1;transform:translate(-50%,0);}
+
+  .bx-top{
+    position:fixed;right:20px;bottom:24px;width:44px;height:44px;border-radius:50%;
+    background:#fff;color:var(--bx-pink);border:1px solid var(--bx-line);
+    display:grid;place-items:center;font-size:16px;box-shadow:var(--bx-shadow);
+    opacity:0;pointer-events:none;transition:.28s;z-index:90;
+  }
+  .bx-top.is-on{opacity:1;pointer-events:auto;}
+  .bx-top:hover{background:var(--bx-pink);color:#fff;}
+
+  /* 隐藏筛选状态 */
+  .bx-video-card.is-hidden{display:none;}
+
+  /* 进入动画 */
+  .bx-reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease;}
+  .bx-reveal.is-in{opacity:1;transform:none;}
+  @media (prefers-reduced-motion: reduce){
+    .bx-reveal{opacity:1;transform:none;transition:none;}
+  }
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 公告条 + 页头（吸顶） -->
+<div class="bx-sticky">
+  <div class="bx-bulletin" role="status" aria-label="最新公告">
+    <div class="bx-wrap">
+      <span class="bx-bulletin-tag">官方发布</span>
+      <div class="bx-bulletin-list" id="bxBulletinList">
+        <span>11·19 秋冬企划「甜软记录计划」报名开启 · 首批 300 位创作者可获高清成片辅导</span>
+        <span>11·15 「白桃日常影像挑战」投稿突破 4,200 条，优秀作品将在官网焦点位展示</span>
+        <span>11·10 创作者扶持升级：设备借用、剪辑模板、正版音乐素材库同步开放</span>
+        <span>11·19 秋冬企划「甜软记录计划」报名开启 · 首批 300 位创作者可获高清成片辅导</span>
+        <span>11·15 「白桃日常影像挑战」投稿突破 4,200 条，优秀作品将在官网焦点位展示</span>
+        <span>11·10 创作者扶持升级：设备借用、剪辑模板、正版音乐素材库同步开放</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="bx-head">
+    <div class="bx-wrap">
+      <a class="bx-logo" href="#bxTop" aria-label="白桃少女小布丁官方网站首页">
+        <span class="bx-logo-mark">布丁</span>
+        <span class="bx-logo-text">
+          <b>白桃少女小布丁</b>
+          <small>OFFICIAL VIDEO BRAND</small>
+        </span>
+      </a>
+
+      <nav class="bx-nav" id="bxNav" aria-label="主导航">
+        <a href="#bxTop">首页</a>
+        <a href="#bxFocus">焦点影像</a>
+        <a href="#bxVideos">影像频道</a>
+        <a href="#bxTopics">专题企划</a>
+        <a href="#bxCreators">创作者</a>
+        <a href="#bxStory">品牌故事</a>
+        <a href="#bxFaq">帮助</a>
+      </nav>
+
+      <form class="bx-search" id="bxSearchForm" role="search" onsubmit="return false;">
+        <input type="search" id="bxSearchInput" placeholder="搜索影像 / 创作者" aria-label="搜索影像或创作者">
+        <button type="submit" aria-label="开始搜索">🔍</button>
+      </form>
+      <div class="bx-search-hint" id="bxSearchHint" role="status"></div>
+
+      <button class="bx-burger" id="bxBurger" aria-label="展开导航" aria-expanded="false" aria-controls="bxNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+</div>
+
+<main id="bxTop">
+
+  <!-- 首屏 -->
+  <section class="bx-hero">
+    <div class="bx-wrap">
+      <div class="bx-hero-grid">
+        <div>
+          <span class="bx-hero-badge"><i></i>品牌官方网站 · 持续运营第 6 年</span>
+          <h1>白桃少女小布丁</h1>
+          <p class="bx-hero-sub">一间把甜软日常做成高清影像的品牌工作室</p>
+          <p class="bx-hero-desc">
+            作为深耕生活方式影像领域的原创品牌，白桃少女小布丁官方网站是品牌发布精品内容、连接创作者与观众的核心阵地。我们以真实、温暖、克制的表达，记录那些容易被忽略的小小瞬间，让每一段日常都有被认真对待的可能。
+          </p>
+          <div class="bx-hero-actions">
+            <a class="bx-btn bx-btn-main" href="#bxVideos">浏览影像频道</a>
+            <a class="bx-btn bx-btn-ghost" href="#bxJoin" data-modal="join">投稿 / 报名企划</a>
+            <button class="bx-btn bx-btn-ghost" type="button" data-modal="share">分享本站</button>
+          </div>
+          <div class="bx-hero-stats">
+            <div class="bx-hero-stat"><b data-count="1280">1,280</b><span>原创影像作品</span></div>
+            <div class="bx-hero-stat"><b data-count="46">46</b><span>签约创作者</span></div>
+            <div class="bx-hero-stat"><b data-count="92">92</b><span>观众口碑好评率 %</span></div>
+          </div>
+        </div>
+
+        <div class="bx-hero-art">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 680'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffe3ea'/%3E%3Cstop offset='.55' stop-color='%23ffd9c2'/%3E%3Cstop offset='1' stop-color='%23d9d0fb'/%3E%3C/linearGradient%3E%3ClinearGradient id='pe' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff9db5'/%3E%3Cstop offset='1' stop-color='%23ffb489'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='680' fill='url(%23bg)'/%3E%3Ccircle cx='640' cy='140' r='96' fill='%23fff' opacity='.6'/%3E%3Ccircle cx='150' cy='540' r='130' fill='%23ffd0dd' opacity='.55'/%3E%3Ccircle cx='300' cy='180' r='26' fill='%23ffb489' opacity='.7'/%3E%3Cpath d='M250 340c0-70 56-126 126-126s126 56 126 126-56 126-126 126-126-56-126-126z' fill='url(%23pe)'/%3E%3Cpath d='M300 330c0-8 6-14 14-14s14 6 14 14' stroke='%23fff' stroke-width='12' fill='none' stroke-linecap='round'/%3E%3Cpath d='M424 330c0-8 6-14 14-14s14 6 14 14' stroke='%23fff' stroke-width='12' fill='none' stroke-linecap='round'/%3E%3Cpath d='M348 400c18 20 38 20 56 0' stroke='%23fff' stroke-width='12' fill='none' stroke-linecap='round'/%3E%3Cpath d='M376 200c0-30 20-50 44-56' stroke='%2390c9a8' stroke-width='10' fill='none' stroke-linecap='round'/%3E%3Cpath d='M420 144c22 4 34 20 34 40-22-2-34-18-34-40z' fill='%23a8e0cb'/%3E%3Crect x='80' y='96' width='150' height='96' rx='16' fill='%23fff' opacity='.72'/%3E%3Crect x='98' y='118' width='82' height='10' rx='5' fill='%23ffb0c6'/%3E%3Crect x='98' y='140' width='114' height='8' rx='4' fill='%23e7d5dc'/%3E%3Crect x='98' y='158' width='64' height='8' rx='4' fill='%23e7d5dc'/%3E%3Ccircle cx='640' cy='470' r='52' fill='%23fff' opacity='.82'/%3E%3Cpath d='M628 452l30 18-30 18z' fill='%23ff7a9c'/%3E%3C/svg%3E"
+               alt="白桃少女小布丁品牌主视觉：粉桃色渐变中的品牌形象与甜软微笑">
+          <div class="bx-hero-float">
+            <span class="bx-avatar bx-avatar-v1">布</span>
+            <div>
+              <b>本周焦点 · 白桃味的一天</b>
+              <small>官方账号 更新于 11·18</small>
+            </div>
+            <i class="bx-live-dot" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关键词解析长文 -->
+  <section class="bx-sec" id="bxStory">
+    <div class="bx-wrap">
+      <div class="bx-about">
+        <aside class="bx-about-side bx-reveal">
+          <span class="bx-eyebrow">Brand Story</span>
+          <h2>关于「白桃少女小布丁」这个品牌</h2>
+          <p>一个把甜味做成方法论的影像品牌：不喧闹、不追赶，只把日常拍得足够清楚、足够温柔。</p>
+          <div class="bx-about-tags">
+            <span class="bx-chip">官方网站</span>
+            <span class="bx-chip">原创影像</span>
+            <span class="bx-chip">内容生态</span>
+            <span class="bx-chip">甜美日常</span>
+            <span class="bx-chip">创作者社区</span>
+            <span class="bx-chip">高清品质</span>
+          </div>
+        </aside>
+
+        <div class="bx-prose bx-reveal">
+          <h3>一、品牌定位：把「甜」理解为一种观察方式</h3>
+          <p>
+            「白桃少女小布丁」并不是一个只与糖果色有关的名字。品牌创立之初，团队给自己定下的核心命题是：<strong>如何把普通日子拍得不敷衍</strong>。白桃的香气是清浅的，布丁的质地是柔软的，这两件事叠加在一起，构成了品牌对内容的基本要求——不靠强刺激抓眼球，而是靠质感与耐心留住观众。围绕这一命题，官方网站把品牌能力拆成了三条线：原创影像制作、创作者社区运营、以及面向企业与合作方的品牌内容服务。
+          </p>
+          <p>
+            在内容方向上，白桃少女小布丁长期深耕生活方式影像这一垂直领域。我们关注清晨的第一杯水、换季时衣柜的重新排布、雨天窗边的透明伞、深夜加班后一碗热汤面。这些素材看起来没有戏剧性，但它们共同构成了大多数人的真实生活。品牌相信，影像的价值不只是记录高光，更在于让观众在别人的日常里认出自己，从而获得一点继续生活的力量。这份信念，是官网所有栏目排布与选题取舍的出发点。
+          </p>
+
+          <h3>二、内容生态：三种角色共同生长</h3>
+          <p>
+            官方网站的内容生态由三种角色共同支撑。第一类是品牌自制内容，包括节气短片、年度企划、品牌广告与纪录式短片，强调统一的视觉语言与高清制作标准；第二类是签约创作者内容，他们各自拥有擅长的领域，从手作、烘焙到家居收纳、城市散步，把品牌的内容边界不断拓宽；第三类是用户投稿内容，任何愿意认真记录生活的人都可以通过投稿入口提交作品，经过编辑筛选后进入社区展映。
+          </p>
+          <p>
+            为了让这三类内容不至于彼此割裂，品牌建立了一套相对克制的编辑机制：每条影像都需要写清楚「为什么拍」「拍给谁看」，而不只是罗列画面。这套机制看起来增加了创作成本，却让内容生态保持了难得的一致性——观众在官网上看到的每一条影像，都能感觉到背后有人在认真思考。也正因为如此，白桃少女小布丁在小范围内积累了相当稳定的口碑，成为不少观众心中「想看生活类内容时的用户首选」。
+          </p>
+          <div class="bx-quote">
+            「甜不是糖分，是一种愿意多看一眼的耐心。」——品牌手册里的第一句话，也被贴在剪辑室的白板上。
+          </div>
+
+          <h3>三、制作标准：从拍摄现场到成片交付</h3>
+          <p>
+            在制作层面，品牌坚持「轻设备、重判断」的原则。多数日常短片使用轻量机型完成，把预算更多放在前期调研与后期调色上。团队内部有一套被称为「三遍法」的流程：第一遍看素材是否成立，第二遍看节奏是否舒服，第三遍看情绪是否准确。只有三遍都通过，作品才会进入发布排期。这套流程并不神秘，但它保证了品牌输出的精品内容不会因为赶进度而失去质感。
+          </p>
+          <p>
+            对合作品牌而言，这套流程同样适用。官方网站设有专门的企业合作入口，从需求梳理、脚本共创到成片交付，均由固定小组跟进，避免沟通层级过多导致的表达失真。过去几年，品牌服务过食品、家居、文具、香氛、服饰等多个领域的合作方，作品在社交平台获得过不错的自然传播。品牌更看重的不是单条数据，而是合作结束后，对方是否愿意把白桃少女小布丁推荐给同行——这被认为是口碑最实在的证明。
+          </p>
+
+          <h3>四、社区与成长：让创作者被看见</h3>
+          <p>
+            白桃少女小布丁的社区并不追求规模上的爆发。相比之下，品牌更在意「有多少人愿意第二次投稿」。为此，官方网站设置了创作者档案页、作品墙、灵感工具箱与投稿指南，把新人最常遇到的三个问题——拍什么、怎么剪、发到哪里——逐一拆解。品牌还会定期举办影像挑战与企划报名，让创作者在明确的主题下练习表达，而不是在无限的选择里反复犹豫。
+          </p>
+          <p>
+            这种慢一点的做法，让社区呈现出一种难得的包容气质。有大学生用手机记录宿舍四季，有新手妈妈拍下孩子第一次独立走路，也有退休教师在小区花园里拍植物。他们的技术水平差异很大，但共同点是真实。品牌认为，一个内容生态是否健康，不看头部有多亮，而看腰部与尾部是否还有人在持续更新。官方网站的更新日志里，长期保留着「本周新投稿」的统计，这既是对创作者的尊重，也是对品牌自身的一份提醒。
+          </p>
+
+          <h3>五、品牌愿景：做一间能被长期信任的影像小屋</h3>
+          <p>
+            面向未来，白桃少女小布丁希望把官网做成一个稳定、清晰、可长期访问的内容门户。我们会继续更新节气短片与年度企划，继续开放创作者扶持名额，继续把合作案例与制作方法整理成可读的文档。品牌不打算用夸张的叙事包装自己，因为在影像这件事上，持续运营本身就是最有说服力的表达。感谢每一位在官网上停留过的观众，也欢迎新的创作者从这里开始，把自己生活里那一点点甜，认真地拍下来。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点影像 -->
+  <section class="bx-sec bx-sec-alt" id="bxFocus">
+    <div class="bx-wrap">
+      <div class="bx-sec-head bx-reveal">
+        <span class="bx-eyebrow">Focus</span>
+        <h2>焦点影像：本周值得慢慢看完的几条</h2>
+        <p>由编辑部从近期更新中挑选，兼顾画面质感与情绪浓度。每条作品都附有创作说明，方便你理解它为什么被放在这里。</p>
+      </div>
+
+      <div class="bx-focus-grid">
+        <article class="bx-focus-main bx-reveal">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 600'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffd3df'/%3E%3Cstop offset='1' stop-color='%23ffbfa1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='900' height='600' fill='url(%23f1)'/%3E%3Ccircle cx='740' cy='120' r='70' fill='%23fff' opacity='.55'/%3E%3Crect x='80' y='330' width='360' height='18' rx='9' fill='%23fff' opacity='.6'/%3E%3Crect x='80' y='376' width='250' height='12' rx='6' fill='%23fff' opacity='.42'/%3E%3Ccircle cx='300' cy='200' r='88' fill='%23fff' opacity='.72'/%3E%3Ccircle cx='276' cy='186' r='8' fill='%23ff7a9c'/%3E%3Ccircle cx='326' cy='186' r='8' fill='%23ff7a9c'/%3E%3Cpath d='M276 222c14 14 34 14 48 0' stroke='%23ff7a9c' stroke-width='8' fill='none' stroke-linecap='round'/%3E%3Crect x='470' y='250' width='230' height='230' rx='24' fill='%23fff' opacity='.55'/%3E%3Cpath d='M560 320l70 45-70 45z' fill='%23ff7a9c' opacity='.85'/%3E%3C/svg%3E"
+               alt="焦点影像封面：白桃味的一天，粉色室内光线下的一杯手冲与水汽">
+          <div class="bx-focus-main-body">
+            <span class="bx-tagline">年度企划 · 01</span>
+            <h3>白桃味的一天：从起床到关灯，把二十四小时拍成一首短诗</h3>
+            <p>八分钟的日常纪录，没有旁白，只有水声、风声与轻声哼唱。创作者用固定机位记录了同一天里光线移动的轨迹，让我们重新注意到房间里那些被忽略的角落。</p>
+            <div class="bx-meta">
+              <span>创作者：小布丁工作室</span>
+              <span>时长 08:12</span>
+              <span>更新于 2026·11·18</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="bx-focus-side">
+          <article class="bx-mini-card bx-reveal">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23e6eefc'/%3E%3Ccircle cx='250' cy='56' r='34' fill='%23ffd8a8'/%3E%3Cpath d='M0 150l90-56 70 42 60-36 100 58v42H0z' fill='%238fb6d9'/%3E%3Cpath d='M0 166l80-30 80 26 80-24 80 30v32H0z' fill='%23689ac4'/%3E%3C/svg%3E"
+                 alt="焦点影像小卡：城市散步路线图与蓝色调街景">
+            <div>
+              <h4>城市散步指南：沿着河岸走完七公里</h4>
+              <p>一条适合周末傍晚的慢走路线，含三处适合取景的转角。</p>
+              <div class="bx-meta"><span>阿桃散步中</span><span>12:40</span></div>
+            </div>
+          </article>
+          <article class="bx-mini-card bx-reveal">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23fdf0e3'/%3E%3Crect x='40' y='70' width='90' height='90' rx='12' fill='%23ffb489'/%3E%3Crect x='150' y='45' width='120' height='115' rx='14' fill='%23ffe0c4'/%3E%3Ccircle cx='210' cy='100' r='26' fill='%23ff8aa6' opacity='.7'/%3E%3C/svg%3E"
+                 alt="焦点影像小卡：烘焙台上的布丁模具与暖色灯光">
+            <div>
+              <h4>零失败布丁：三次调整后的家庭配方</h4>
+              <p>从凝固度到焦糖色泽，把翻车点一次讲清楚。</p>
+              <div class="bx-meta"><span>甜点研究所</span><span>09:26</span></div>
+            </div>
+          </article>
+          <article class="bx-mini-card bx-reveal">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23e8f3ee'/%3E%3Cpath d='M40 160c20-60 60-90 100-90s80 30 100 90z' fill='%23a8e0cb'/%3E%3Ccircle cx='240' cy='60' r='22' fill='%23fff' opacity='.8'/%3E%3Cpath d='M100 130c0-14 10-24 24-24' stroke='%23fff' stroke-width='8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"
+                 alt="焦点影像小卡：阳台绿植与自然光下的手作陶器">
+            <div>
+              <h4>把阳台改成小花园：三个月改造全记录</h4>
+              <p>预算两千元以内的植物配置与灯位方案。</p>
+              <div class="bx-meta"><span>绿植日常</span><span>15:03</span></div>
+            </div>
+          </article>
+          <article class="bx-mini-card bx-reveal">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23efe9fb'/%3E%3Ccircle cx='160' cy='100' r='52' fill='%23c3b4f0'/%3E%3Cpath d='M160 68v64M128 100h64' stroke='%23fff' stroke-width='10' stroke-linecap='round'/%3E%3C/svg%3E"
+                 alt="焦点影像小卡：紫色背景下的剪辑时间线与鼠标指针">
+            <div>
+              <h4>剪辑思路拆解：如何让日常素材有呼吸感</h4>
+              <p>四个关于留白、转场与声音层次的实用技巧。</p>
+              <div class="bx-meta"><span>后期小课</span><span>11:18</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 影像频道 / 视频流 -->
+  <section class="bx-sec" id="bxVideos">
+    <div class="bx-wrap">
+      <div class="bx-sec-head bx-reveal">
+        <span class="bx-eyebrow">Channel</span>
+        <h2>影像频道：按你的心情挑一条</h2>
+        <p>点击标签可筛选主题。每条影像都经过编辑初筛，封面与标题均来自创作者原始投稿，我们在官网保留完整说明，方便你理解作品背景。</p>
+      </div>
+
+      <div class="bx-filter-row" id="bxFilterRow" role="tablist" aria-label="主题筛选">
+        <button class="bx-filter is-active" data-filter="all" role="tab" aria-selected="true">全部</button>
+        <button class="bx-filter" data-filter="daily" role="tab" aria-selected="false">日常记录</button>
+        <button class="bx-filter" data-filter="skill" role="tab" aria-selected="false">实用技巧</button>
+        <button class="bx-filter" data-filter="city" role="tab" aria-selected="false">城市探索</button>
+        <button class="bx-filter" data-filter="handmade" role="tab" aria-selected="false">手作DIY</button>
+        <button class="bx-filter" data-filter="talk" role="tab" aria-selected="false">人物访谈</button>
+      </div>
+
+      <div class="bx-video-grid" id="bxVideoGrid">
+        <article class="bx-video-card bx-reveal" data-cat="daily">
+          <div class="bx-video-thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23ffe7ee'/%3E%3Ccircle cx='90' cy='90' r='44' fill='%23ffb0c6'/%3E%3Crect x='160' y='60' width='120' height='12' rx='6' fill='%23fff' opacity='.8'/%3E%3Crect x='160' y='88' width='90' height='10' rx='5' fill='%23fff' opacity='.6'/%3E%3Crect x='160' y='114' width='110' height='10' rx='5' fill='%23fff' opacity='.45'/%3E%3C/svg%3E"
+                 alt="视频封面：晨间光线里的白桃气泡水与窗台">
+            <span class="bx-thumb-tag">日常记录</span>
+            <span class="bx-play"><i></i></span>
+            <span class="bx-thumb-dur">06:24</span>
+          </div>
+          <div class="bx-video-body">
+            <h3>晨间十五分钟：一个人的白桃气泡水仪式</h3>
+            <p>没有闹钟，没有手机，只有玻璃杯里缓慢上升的气泡。这条片子的拍摄动机很简单——想把一天里最安静的十五分钟留下来。</p>
+            <div class="bx-video-author"><span class="bx-avatar bx-avatar-v1">布</span><span>小布丁工作室 · 11·18</span></div>
+            <div class="bx-video-foot">
+              <button class="bx-act" data-like aria-pressed="false">♡ <span>1,242</span></button>
+              <button class="bx-act" data-fav aria-pressed="false">☆ 收藏</button>
+              <button class="bx-act bx-act-share" data-share aria-label="分享此影像">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bx-video-card bx-reveal" data-cat="skill">
+          <div class="bx-video-thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23eaf2fd'/%3E%3Crect x='34' y='40' width='120' height='100' rx='10' fill='%23fff'/%3E%3Crect x='48' y='58' width='70' height='8' rx='4' fill='%238fb6d9'/%3E%3Crect x='48' y='76' width='92' height='6' rx='3' fill='%23cfdff2'/%3E%3Crect x='48' y='92' width='60' height='6' rx='3' fill='%23cfdff2'/%3E%3Ccircle cx='240' cy='90' r='38' fill='%23689ac4' opacity='.8'/%3E%3C/svg%3E"
+                 alt="视频封面：剪辑软件时间线与蓝色调教程画面">
+            <span class="bx-thumb-tag">实用技巧</span>
+            <span class="bx-play"><i></i></span>
+            <span class="bx-thumb-dur">13:05</span>
+          </div>
+          <div class="bx-video-body">
+            <h3>三步调出通透的日系肤色，参数全部给你</h3>
+            <p>针对室内自然光素材，讲解白平衡、高光压缩与肤色调和的取舍，附带可直接套用的参数表与前后对比。</p>
+            <div class="bx-video-author"><span class="bx-avatar bx-avatar-v2">后</span><span>后期小课 · 11·17</span></div>
+            <div class="bx-video-foot">
+              <button class="bx-act" data-like aria-pressed="false">♡ <span>968</span></button>
+              <button class="bx-act" data-fav aria-pressed="false">☆ 收藏</button>
+              <button class="bx-act bx-act-share" data-share aria-label="分享此影像">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bx-video-card bx-reveal" data-cat="city">
+          <div class="bx-video-thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23fdf2e6'/%3E%3Crect x='0' y='120' width='320' height='60' fill='%23d9c3a8'/%3E%3Crect x='30' y='50' width='34' height='80' fill='%23c9a98a'/%3E%3Crect x='76' y='70' width='34' height='60' fill='%23dcbf9e'/%3E%3Crect x='122' y='38' width='40' height='92' fill='%23bfa082'/%3E%3Ccircle cx='250' cy='60' r='30' fill='%23ffd8a8'/%3E%3C/svg%3E"
+                 alt="视频封面：老街区骑楼与暖色黄昏">
+            <span class="bx-thumb-tag">城市探索</span>
+            <span class="bx-play"><i></i></span>
+            <span class="bx-thumb-dur">18:42</span>
+          </div>
+          <div class="bx-video-body">
+            <h3>在老城区走一下午：骑楼、凉茶铺与修表匠</h3>
+            <p>用一镜到底的方式记录一条不足八百米的老街，片中出现的修表匠已在同个位置工作三十七年。</p>
+            <div class="bx-video-author"><span class="bx-avatar bx-avatar-v3">桃</span><span>阿桃散步中 · 11·16</span></div>
+            <div class="bx-video-foot">
+              <button class="bx-act" data-like aria-pressed="false">♡ <span>2,087</span></button>
+              <button class="bx-act" data-fav aria-pressed="false">☆ 收藏</button>
+              <button class="bx-act bx-act-share" data-share aria-label="分享此影像">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bx-video-card bx-reveal" data-cat="handmade">
+          <div class="bx-video-thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23f6efe4'/%3E%3Ccircle cx='90' cy='96' r='46' fill='%23e0b48a'/%3E%3Crect x='160' y='56' width='120' height='14' rx='7' fill='%23c79a72'/%3E%3Crect x='160' y='86' width='86' height='10' rx='5' fill='%23d9b797'/%3E%3Crect x='160' y='110' width='104' height='10' rx='5' fill='%23d9b797'/%3E%3C/svg%3E"
+                 alt="视频封面：陶土、木托盘与手作工具">
+            <span class="bx-thumb-tag">手作DIY</span>
+            <span class="bx-play"><i></i></span>
+            <span class="bx-thumb-dur">10:28</span>
+          </div>
+          <div class="bx-video-body">
+            <h3>从揉泥到上釉：第一次做陶杯的全部翻车记录</h3>
+            <p>把失败镜头也剪进去的一条手作记录，包含拉坯、修坯、素烧与上釉四个阶段，以及老师傅的两句关键提醒。</p>
+            <div class="bx-video-author"><span class="bx-avatar bx-avatar-v4">陶</span><span>慢手作坊 · 11·15</span></div>
+            <div class="bx-video-foot">
+              <button class="bx-act" data-like aria-pressed="false">♡ <span>743</span></button>
+              <button class="bx-act" data-fav aria-pressed="false">☆ 收藏</button>
+              <button class="bx-act bx-act-share" data-share aria-label="分享此影像">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bx-video-card bx-reveal" data-cat="talk">
+          <div class="bx-video-thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23ede9fb'/%3E%3Ccircle cx='92' cy='84' r='38' fill='%23c3b4f0'/%3E%3Ccircle cx='228' cy='84' r='38' fill='%23ffb0c6'/%3E%3Crect x='146' y='120' width='28' height='28' rx='8' fill='%238f9dff'%3E%3C/rect%3E%3C/svg%3E"
+                 alt="视频封面：两把椅子对谈的场景与紫色背景">
+            <span class="bx-thumb-tag">人物访谈</span>
+            <span class="bx-play"><i></i></span>
+            <span class="bx-thumb-dur">22:10</span>
+          </div>
+          <div class="bx-video-body">
+            <h3>访谈：拍了八年日常的人，怎么看待「记录」这件事</h3>
+            <p>与一位长期拍摄生活纪录的创作者对谈，聊设备焦虑、素材囤积与发布前的自我怀疑，也聊她为什么坚持每条片子都写创作说明。</p>
+            <div class="bx-video-author"><span class="bx-avatar bx-avatar-v5">访</span><span>布丁会客厅 · 11·14</span></div>
+            <div class="bx-video-foot">
+              <button class="bx-act" data-like aria-pressed="false">♡ <span>1,536</span></button>
+              <button class="bx-act" data-fav aria-pressed="false">☆ 收藏</button>
+              <button class="bx-act bx-act-share" data-share aria-label="分享此影像">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bx-video-card bx-reveal" data-cat="daily">
+          <div class="bx-video-thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23eaf6f0'/%3E%3Crect x='40' y='100' width='240' height='10' rx='5' fill='%23a8e0cb'/%3E%3Ccircle cx='90' cy='70' r='26' fill='%23a8e0cb'/%3E%3Ccircle cx='150' cy='58' r='18' fill='%23cdeee1'/%3E%3Ccircle cx='210' cy='76' r='22' fill='%23a8e0cb' opacity='.7'/%3E%3Crect x='248' y='60' width='8' height='40' rx='4' fill='%237fc3a8'/%3E%3C/svg%3E"
+                 alt="视频封面：窗边绿植与清晨的自然光">
+            <span class="bx-thumb-tag">日常记录</span>
+            <span class="bx-play"><i></i></span>
+            <span class="bx-thumb-dur">07:46</span>
+          </div>
+          <div class="bx-video-body">
+            <h3>给六盆植物换盆的那个下午，顺便整理了自己</h3>
+            <p>没有教程性质的讲解，只是一次缓慢的劳动记录。创作者在片尾写道：植物长根的时候，人也需要一点土。</p>
+            <div class="bx-video-author"><span class="bx-avatar bx-avatar-v3">绿</span><span>绿植日常 · 11·13</span></div>
+            <div class="bx-video-foot">
+              <button class="bx-act" data-like aria-pressed="false">♡ <span>612</span></button>
+              <button class="bx-act" data-fav aria-pressed="false">☆ 收藏</button>
+              <button class="bx-act bx-act-share" data-share aria-label="分享此影像">分享</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="bx-sec bx-sec-alt" id="bxTopics">
+    <div class="bx-wrap">
+      <div class="bx-sec-head bx-reveal">
+        <span class="bx-eyebrow">Programs</span>
+        <h2>专题企划：把一个主题拍透</h2>
+        <p>企划是品牌内容影响力的重要载体。每个企划都有明确的命题、开放报名与统一评审，优秀作品会进入官网焦点位与年度合辑。</p>
+      </div>
+
+      <div class="bx-topic-grid">
+        <article class="bx-topic bx-reveal">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 420'%3E%3Cdefs%3E%3ClinearGradient id='t1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffbcd0'/%3E%3Cstop offset='1' stop-color='%23ffd9b8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='420' fill='url(%23t1)'/%3E%3Ccircle cx='500' cy='110' r='70' fill='%23fff' opacity='.6'/%3E%3Crect x='70' y='250' width='260' height='16' rx='8' fill='%23fff' opacity='.66'/%3E%3Crect x='70' y='288' width='180' height='10' rx='5' fill='%23fff' opacity='.45'/%3E%3C/svg%3E"
+               alt="专题封面：甜软记录计划，粉橙渐变的企划主视觉">
+          <span class="bx-topic-state">报名中 · 11·30 截止</span>
+          <h3>甜软记录计划 · 第二季</h3>
+          <p>面向所有生活记录者的开放企划，提供设备借用、剪辑辅导与官网展映位，共 300 个名额。</p>
+        </article>
+
+        <article class="bx-topic bx-reveal">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 260'%3E%3Crect width='320' height='260' fill='%23e7eefb'/%3E%3Crect x='40' y='90' width='240' height='14' rx='7' fill='%23fff' opacity='.8'/%3E%3Crect x='40' y='124' width='150' height='10' rx='5' fill='%23fff' opacity='.55'/%3E%3Ccircle cx='240' cy='70' r='34' fill='%238fb6d9'/%3E%3C/svg%3E"
+               alt="专题封面：七日城市散步影像计划，蓝色调街景">
+          <span class="bx-topic-state">更新至 05</span>
+          <h3>七日城市散步</h3>
+          <p>连续七天，每天一条五分钟以内的散步影像，主题由编辑部给出，取景完全自由。</p>
+        </article>
+
+        <article class="bx-topic bx-reveal">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 260'%3E%3Crect width='320' height='260' fill='%23fdf0e3'/%3E%3Ccircle cx='100' cy='120' r='46' fill='%23ffb489'/%3E%3Crect x='170' y='88' width='100' height='12' rx='6' fill='%23e0a97a'/%3E%3Crect x='170' y='116' width='72' height='10' rx='5' fill='%23e0a97a' opacity='.7'/%3E%3Crect x='170' y='142' width='88' height='10' rx='5' fill='%23e0a97a' opacity='.5'/%3E%3C/svg%3E"
+               alt="专题封面：厨房里的时间，暖色烘焙场景">
+          <span class="bx-topic-state">已完结 · 8 集</span>
+          <h3>厨房里的时间</h3>
+          <p>以一道家常甜点为线索，记录制作过程里的等待、失败与重复，全部采用自然光拍摄。</p>
+        </article>
+
+        <article class="bx-topic bx-reveal">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 260'%3E%3Crect width='320' height='260' fill='%23efe9fb'/%3E%3Ccircle cx='160' cy='110' r='40' fill='%23c3b4f0'/%3E%3Crect x='70' y='176' width='180' height='12' rx='6' fill='%23fff' opacity='.8'/%3E%3Crect x='100' y='204' width='120' height='10' rx='5' fill='%23fff' opacity='.5'/%3E%3C/svg%3E"
+               alt="专题封面：创作者对谈企划，紫色调人物剪影">
+          <span class="bx-topic-state">投票进行中</span>
+          <h3>我们在拍什么 · 年度对谈</h3>
+          <p>六位创作者围绕「真实与修饰」展开讨论，观众可在官网参与投票，选出最想看的对谈主题。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="bx-sec" id="bxCreators">
+    <div class="bx-wrap">
+      <div class="bx-sec-head bx-reveal">
+        <span class="bx-eyebrow">Creators</span>
+        <h2>创作者矩阵：认真生活的人都在这里</h2>
+        <p>他们是品牌内容生态的中坚力量。点击卡片可查看完整档案与代表作品，也欢迎通过投稿入口加入我们。</p>
+      </div>
+
+      <div class="bx-creator-grid">
+        <article class="bx-creator bx-reveal">
+          <span class="bx-avatar bx-avatar-v1">桃</span>
+          <h3>阿桃散步中</h3>
+          <p class="bx-field">城市探索 · 街景纪录</p>
+          <p>习惯用一条长镜头讲完一个街区，作品里总有风声和脚步声，从不加背景音乐。</p>
+          <div class="bx-creator-nums">
+            <div><b>86</b>作品</div>
+            <div><b>3.4万</b>关注</div>
+          </div>
+          <button class="bx-creator-more" data-creator="阿桃散步中|城市探索 · 街景纪录|86 部作品，长期拍摄老城区与市井人物，代表作《在老城区走一下午》系列。">查看档案 →</button>
+        </article>
+
+        <article class="bx-creator bx-reveal">
+          <span class="bx-avatar bx-avatar-v2">后</span>
+          <h3>后期小课</h3>
+          <p class="bx-field">实用技巧 · 剪辑教学</p>
+          <p>只讲能立刻用上的方法，参数表全部公开。她的教程片尾固定附一份可下载的笔记。</p>
+          <div class="bx-creator-nums">
+            <div><b>64</b>作品</div>
+            <div><b>5.1万</b>关注</div>
+          </div>
+          <button class="bx-creator-more" data-creator="后期小课|实用技巧 · 剪辑教学|64 部作品，专注肤色处理与节奏剪辑，代表作《三步调出通透的日系肤色》。">查看档案 →</button>
+        </article>
+
+        <article class="bx-creator bx-reveal">
+          <span class="bx-avatar bx-avatar-v3">绿</span>
+          <h3>绿植日常</h3>
+          <p class="bx-field">生活方式 · 植物手记</p>
+          <p>把阳台变成小花园的实践者，作品多为一周一次的缓慢更新，粉丝称她为「植物闹钟」。</p>
+          <div class="bx-creator-nums">
+            <div><b>52</b>作品</div>
+            <div><b>2.2万</b>关注</div>
+          </div>
+          <button class="bx-creator-more" data-creator="绿植日常|生活方式 · 植物手记|52 部作品，记录阳台改造与四季植物状态，代表作《把阳台改成小花园》。">查看档案 →</button>
+        </article>
+
+        <article class="bx-creator bx-reveal">
+          <span class="bx-avatar bx-avatar-v4">陶</span>
+          <h3>慢手作坊</h3>
+          <p class="bx-field">手作DIY · 材料实验</p>
+          <p>拍陶艺也拍失败。她的作品里翻车镜头占比接近三成，反而让很多人第一次敢动手。</p>
+          <div class="bx-creator-nums">
+            <div><b>41</b>作品</div>
+            <div><b>1.8万</b>关注</div>
+          </div>
+          <button class="bx-creator-more" data-creator="慢手作坊|手作DIY · 材料实验|41 部作品，专注陶艺与木作记录，代表作《第一次做陶杯的全部翻车记录》。">查看档案 →</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品墙 -->
+  <section class="bx-sec bx-sec-alt" id="bxWall">
+    <div class="bx-wrap">
+      <div class="bx-sec-head bx-reveal">
+        <span class="bx-eyebrow">Gallery</span>
+        <h2>作品墙：来自社区的十二帧</h2>
+        <p>本季从投稿中选出的代表画面，题材涵盖日常、植物、手作与城市。点击图片可查看对应的影像条目。</p>
+      </div>
+
+      <div class="bx-wall">
+        <figure class="bx-w-a bx-reveal">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23ffe9ee'/%3E%3Ccircle cx='180' cy='180' r='92' fill='%23ffb0c6'/%3E%3Crect x='330' y='120' width='220' height='16' rx='8' fill='%23fff' opacity='.8'/%3E%3Crect x='330' y='156' width='150' height='12' rx='6' fill='%23fff' opacity='.55'/%3E%3C/svg%3E"
+               alt="作品墙大图：白桃色房间里的一束早晨光线">
+          <figcaption>晨光落在枕边 · 阿桃散步中</figcaption>
+        </figure>
+        <figure class="bx-w-b bx-reveal">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 240'%3E%3Crect width='320' height='240' fill='%23eaf6f0'/%3E%3Ccircle cx='110' cy='110' r='44' fill='%23a8e0cb'/%3E%3Crect x='60' y='180' width='200' height='12' rx='6' fill='%23fff' opacity='.7'/%3E%3C/svg%3E"
+               alt="作品墙中图：绿色窗台上的薄荷与浇水壶">
+          <figcaption>薄荷换盆记 · 绿植日常</figcaption>
+        </figure>
+        <figure class="bx-w-c bx-reveal">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 320'%3E%3Crect width='320' height='320' fill='%23fdf0e3'/%3E%3Ccircle cx='160' cy='150' r='66' fill='%23ffb489'/%3E%3Ccircle cx='160' cy='150' r='30' fill='%23fff' opacity='.7'/%3E%3C/svg%3E"
+               alt="作品墙方图：焦糖布丁成品特写与餐具">
+          <figcaption>第三次才成功的布丁 · 甜点研究所</figcaption>
+        </figure>
+        <figure class="bx-w-d bx-reveal">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 320'%3E%3Crect width='640' height='320' fill='%23e7eefb'/%3E%3Cpath d='M0 240l120-80 100 60 120-70 120 60 180-50v160H0z' fill='%238fb6d9'/%3E%3Cpath d='M0 262l140-46 120 40 130-34 130 44 120-30v84H0z' fill='%23689ac4'/%3E%3C/svg%3E"
+               alt="作品墙宽图：傍晚河岸的散步路线与远景城市轮廓">
+          <figcaption>河岸七公里 · 城市影像组</figcaption>
+        </figure>
+        <figure class="bx-w-c bx-reveal">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 320'%3E%3Crect width='320' height='320' fill='%23efe9fb'/%3E%3Crect x='90' y='80' width='140' height='160' rx='18' fill='%23c3b4f0'/%3E%3Ccircle cx='160' cy='150' r='34' fill='%23fff' opacity='.7'/%3E%3C/svg%3E"
+               alt="作品墙方图：紫色调的手作陶杯与木质托盘">
+          <figcaption>第一次拉坯 · 慢手作坊</figcaption>
+        </figure>
+        <figure class="bx-w-b bx-reveal">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 240'%3E%3Crect width='320' height='240' fill='%23fff1e6'/%3E%3Crect x='40' y='70' width='110' height='110' rx='14' fill='%23ffc78f'/%3E%3Crect x='170' y='96' width='110' height='84' rx='14' fill='%23ffd9c2'/%3E%3C/svg%3E"
+               alt="作品墙中图：暖色厨房台面上的模具与食材">
+          <figcaption>备料前的十分钟 · 甜点研究所</figcaption>
+        </figure>
+        <figure class="bx-w-c bx-reveal">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 320'%3E%3Crect width='320' height='320' fill='%23e8f1fb'/%3E%3Crect x='60' y='120' width='200' height='80' rx='12' fill='%23fff' opacity='.85'/%3E%3Crect x='84' y='150' width='110' height='10' rx='5' fill='%238fb6d9'/%3E%3Crect x='84' y='172' width='70' height='8' rx='4' fill='%23cfdff2'/%3E%3C/svg%3E"
+               alt="作品墙方图：剪辑桌面上的素材缩略图与笔记本">
+          <figcaption>夜里的第三遍回看 · 后期小课</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 随笔 + 动态 -->
+  <section class="bx-sec" id="bxNotes">
+    <div class="bx-wrap">
+      <div class="bx-sec-head bx-reveal">
+        <span class="bx-eyebrow">Notes</span>
+        <h2>品牌随笔与最新动态</h2>
+        <p>这里记录品牌在拍摄现场、社区运营与合作项目中的真实片段，也同步官方发布的最新动态。</p>
+      </div>
+
+      <div class="bx-note-grid" style="margin-bottom:44px;">
+        <article class="bx-note bx-reveal">
+          <h3>剪辑室的白板换了一句话</h3>
+          <p>上周团建结束后，那块写满排期的白板被擦干净，换上一句新的话：「先把话讲清楚，再谈风格。」这周剪的三条片子都在按这个标准往回改。</p>
+          <footer><span class="bx-avatar bx-avatar-v1" style="width:22px;height:22px;font-size:9px;">布</span> 小布丁工作室 · 11·18</footer>
+        </article>
+        <article class="bx-note bx-reveal">
+          <h3>一次失败的取景，后来成了素材库</h3>
+          <p>原计划拍日落，结果云层太厚。索性把机位架在路边，录了四十分钟的环境音。后来这条音轨被用在两条片子里，反而成了意外收获。</p>
+          <footer><span class="bx-avatar bx-avatar-v3" style="width:22px;height:22px;font-size:9px;">桃</span> 阿桃散步中 · 11·16</footer>
+        </article>
+        <article class="bx-note bx-reveal">
+          <h3>投稿页新增了两个必填项</h3>
+          <p>从这周起，投稿需要填写「拍摄动机」与「成片时长说明」。这两个字段会增加一点麻烦，但能帮助编辑更快理解你的作品，也方便你在发布前再想一遍。</p>
+          <footer><span class="bx-avatar bx-avatar-v2" style="width:22px;height:22px;font-size:9px;">编</span> 编辑部 · 11·15</footer>
+        </article>
+      </div>
+
+      <ul class="bx-news">
+        <li class="bx-reveal"><time>2026·11·19</time><b>「甜软记录计划」第二季开放报名，300 个名额与设备借用同步上线</b><span>官方发布</span></li>
+        <li class="bx-reveal"><time>2026·11·17</time><b>创作者扶持升级：新增正版音乐素材库、剪辑模板与一对一辅导时段</b><span>扶持</span></li>
+        <li class="bx-reveal"><time>2026·11·14</time><b>十一月企划「七日城市散步」更新至第五集，累计投稿超过 1,200 条</b><span>企划</span></li>
+        <li class="bx-reveal"><time>2026·11·09</time><b>品牌与三家生活方式企业达成年度影像合作，案例将于近期整理发布</b><span>合作</span></li>
+        <li class="bx-reveal"><time>2026·11·03</time><b>官方网站完成一版内容结构调整，新增创作者档案与作品墙两个板块</b><span>更新日志</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 评价 -->
+  <section class="bx-sec bx-sec-alt" id="bxReviews">
+    <div class="bx-wrap">
+      <div class="bx-sec-head bx-reveal">
+        <span class="bx-eyebrow">Voices</span>
+        <h2>他们这样说</h2>
+        <p>来自观众与创作者的反馈，均为真实评价整理。我们保留不同声音，因为口碑需要经得起讨论。</p>
+      </div>
+
+      <div class="bx-review-grid">
+        <article class="bx-review bx-reveal">
+          <div class="bx-review-top">
+            <span class="bx-avatar bx-avatar-v1">林</span>
+            <div><b>林小满</b><small>观众 · 关注 2 年</small></div>
+            <span class="bx-stars">★★★★★</span>
+          </div>
+          <p>最喜欢的一点是这里的片子不着急。很多平台三秒钟就要你上头，这里的片子会先让你坐下来。我的收藏夹里存了十几条，压力大的时候翻出来重看。</p>
+        </article>
+        <article class="bx-review bx-reveal">
+          <div class="bx-review-top">
+            <span class="bx-avatar bx-avatar-v3">何</span>
+            <div><b>何同学</b><small>投稿创作者 · 学生</small></div>
+            <span class="bx-stars">★★★★★</span>
+          </div>
+          <p>第一次投稿就被编辑写了一长段反馈，指出了我片头节奏的问题，还给了两套修改建议。说实话比我自己剪十遍都有用。后来那一条被放到了作品墙，我截图发给了家里人。</p>
+        </article>
+        <article class="bx-review bx-reveal">
+          <div class="bx-review-top">
+            <span class="bx-avatar bx-avatar-v2">周</span>
+            <div><b>周舟</b><small>合作方 · 品牌市场</small></div>
+            <span class="bx-stars">★★★★☆</span>
+          </div>
+          <p>合作过一次产品短片，沟通成本比预期低。前期会反复确认需求，成片交付也准时。唯一想提的是排期偏紧，希望下次能留更多时间做前期。</p>
+        </article>
+        <article class="bx-review bx-reveal">
+          <div class="bx-review-top">
+            <span class="bx-avatar bx-avatar-v4">陈</span>
+            <div><b>陈皮不加糖</b><small>观众 · 新用户</small></div>
+            <span class="bx-stars">★★★★★</span>
+          </div>
+          <p>网页做得挺舒服，分类清楚，找片子不用翻很久。就是希望能加个夜间模式，晚上看久了眼睛有点累。整体还是很愿意再来的。</p>
+        </article>
+        <article class="bx-review bx-reveal">
+          <div class="bx-review-top">
+            <span class="bx-avatar bx-avatar-v5">阿</span>
+            <div><b>阿岚</b><small>创作者 · 手作方向</small></div>
+            <span class="bx-stars">★★★★★</span>
+          </div>
+          <p>在社区里认识了两个同做陶艺的朋友，大家会互相看片提意见。这种氛围比单纯的数据增长更让我愿意继续更新，也让我第一次觉得投稿不是在自言自语。</p>
+        </article>
+        <article class="bx-review bx-reveal">
+          <div class="bx-review-top">
+            <span class="bx-avatar bx-avatar-v1">吴</span>
+            <div><b>吴老师</b><small>观众 · 退休教师</small></div>
+            <span class="bx-stars">★★★★☆</span>
+          </div>
+          <p>孩子推荐我看的，本来担心看不懂，结果发现很多片子讲的就是我们小区的花和树。画面很干净，字幕也大，对年纪大的人算友好。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作灵感 + 合作 -->
+  <section class="bx-sec" id="bxInspire">
+    <div class="bx-wrap">
+      <div class="bx-sec-head bx-reveal">
+        <span class="bx-eyebrow">Inspiration</span>
+        <h2>创作灵感与合作伙伴</h2>
+        <p>给正在准备的你一点起点，也给一路同行的伙伴一句感谢。灵感箱每月更新一次，内容来自编辑部与创作者共创。</p>
+      </div>
+
+      <div class="bx-focus-grid" style="grid-template-columns:1fr 1fr;">
+        <article class="bx-note bx-reveal" style="padding:30px;">
+          <h3 style="font-size:19px;">灵感箱 · 本月三条可拍的选题</h3>
+          <p style="margin-top:14px;">① 拍一件用了五年以上的旧物，只讲它陪你的那段时间；② 在同一个位置，拍一天的三个时刻，用固定机位；③ 找一位最近见过的人，问三个问题，不要问工作。</p>
+          <p style="margin-top:10px;">每条都附了参考剪辑思路：前两条建议单线叙事，第三条建议对话式结构，段落之间用环境音过渡。需要的模板可在投稿页面下载。</p>
+          <div class="bx-about-tags" style="margin-top:16px;">
+            <span class="bx-chip">选题灵感</span>
+            <span class="bx-chip">剪辑思路</span>
+            <span class="bx-chip">投稿可用</span>
+          </div>
+        </article>
+
+        <article class="bx-note bx-reveal" style="padding:30px;">
+          <h3 style="font-size:19px;">合作伙伴 · 一起把内容做好</h3>
+          <p style="margin-top:14px;">过去几年，我们与食品、家居、文具、香氛、服饰等领域的企业保持着长期合作。合作方式包括品牌短片、系列企划与创作者共创，所有项目均保留创作说明与制作记录。</p>
+          <div class="bx-partner-row">
+            <div class="bx-partner">桃气食品</div>
+            <div class="bx-partner">木下家居</div>
+            <div class="bx-partner">白纸文具</div>
+            <div class="bx-partner">晚风香氛</div>
+            <div class="bx-partner">布丁服饰</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ + CTA -->
+  <section class="bx-sec bx-sec-alt" id="bxFaq">
+    <div class="bx-wrap">
+      <div class="bx-sec-head bx-reveal">
+        <span class="bx-eyebrow">Help</span>
+        <h2>常见问题</h2>
+        <p>关于投稿、合作与内容使用的说明都在这里。若仍未解决，可通过页面底部的联系邮箱与我们沟通。</p>
+      </div>
+
+      <div class="bx-faq">
+        <details class="bx-reveal">
+          <summary>投稿有题材限制吗？什么样的内容更容易被选中？</summary>
+          <p>题材不设硬性限制，但需与生活方式影像相关。编辑更看重三件事：拍摄动机是否清楚、画面是否稳定可用、是否配有完整的创作说明。技术不完美不是阻碍，敷衍才是。</p>
+        </details>
+        <details class="bx-reveal">
+          <summary>投稿后多久会收到反馈？</summary>
+          <p>一般在七个工作日内给出初审结果。若通过初审，编辑会附上具体的修改建议；若未通过，也会说明主要原因，方便你在下一次投稿时调整。</p>
+        </details>
+        <details class="bx-reveal">
+          <summary>品牌合作如何发起？需要准备哪些材料？</summary>
+          <p>可通过联系邮箱说明合作背景、目标与大致预算区间，并附上公司或品牌介绍。我们会在三个工作日内回复，必要时安排一次线上沟通，再给出内容方案与排期。</p>
+        </details>
+        <details class="bx-reveal">
+          <summary>作品被采用后，版权如何约定？</summary>
+          <p>创作者保留作品署名权与原始著作权。品牌在官方网站及官方渠道展示时，会显著标注创作者信息，并在采用前与创作者确认使用范围与期限。</p>
+        </details>
+        <details class="bx-reveal">
+          <summary>「甜软记录计划」的报名需要收费吗？</summary>
+          <p>不需要。企划报名、辅导与展映均不收取任何费用。设备借用需签署简单的使用确认单，归还后即完成流程。请警惕任何以品牌名义收取费用的行为。</p>
+        </details>
+        <details class="bx-reveal">
+          <summary>可以使用官网上的影像素材做二次创作吗？</summary>
+          <p>未经书面授权，请勿将他人作品用于二次创作或商业用途。若你希望基于某条影像进行回应式创作，可先通过邮箱与我们联系，我们会协助你与原作者沟通。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="bx-sec" id="bxJoin">
+    <div class="bx-wrap">
+      <div class="bx-cta bx-reveal">
+        <h2>把你的日常，交给一个认真的平台</h2>
+        <p>无论是第一次拿起手机，还是已经拍了很久，白桃少女小布丁都欢迎你从这里开始。投稿、报名企划或聊聊合作，我们都会认真回复。</p>
+        <div class="bx-cta-actions">
+          <button class="bx-btn bx-btn-main" data-modal="join">进入投稿入口</button>
+          <button class="bx-btn bx-btn-ghost" data-modal="contact">联系我们</button>
+          <button class="bx-btn bx-btn-ghost" data-modal="share">分享给朋友</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bx-foot">
+  <div class="bx-wrap">
+    <div class="bx-foot-grid">
+      <div>
+        <div class="bx-foot-brand">
+          <span class="bx-logo-mark">布丁</span>
+          <b>白桃少女小布丁</b>
+        </div>
+        <p>白桃少女小布丁官方网站，是一家专注生活方式影像的原创品牌。我们以高清制作标准与克制的表达，持续为创作者搭建内容生态，为观众提供值得反复观看的精品内容。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#bxFocus">焦点影像</a></li>
+          <li><a href="#bxVideos">影像频道</a></li>
+          <li><a href="#bxTopics">专题企划</a></li>
+          <li><a href="#bxWall">作品墙</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于品牌</h4>
+        <ul>
+          <li><a href="#bxStory">品牌故事</a></li>
+          <li><a href="#bxCreators">创作者矩阵</a></li>
+          <li><a href="#bxNotes">企业动态</a></li>
+          <li><a href="#bxFaq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系与投稿</h4>
+        <p>投稿邮箱：submit@baitao-budin.example</p>
+        <p>合作邮箱：partner@baitao-budin.example</p>
+        <p>工作时间：周一至周五 10:00–19:00</p>
+        <p>办公地址：白桃创意园 3 号楼 402 室</p>
+      </div>
+    </div>
+    <div class="bx-foot-bottom">
+      <span>白桃少女小布丁官方网站 · 版权所有 · 持续运营中</span>
+      <span>© 2026 白桃少女小布丁品牌工作室 · 保留所有权利</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 弹窗 -->
+<div class="bx-modal-mask" id="bxModalMask" aria-hidden="true">
+  <div class="bx-modal" role="dialog" aria-modal="true" aria-labelledby="bxModalTitle">
+    <button class="bx-modal-close" id="bxModalClose" aria-label="关闭弹窗">✕</button>
+    <h3 id="bxModalTitle">提示</h3>
+    <div id="bxModalBody"></div>
+    <div class="bx-modal-actions" id="bxModalActions"></div>
+  </div>
+</div>
+
+<div class="bx-toast" id="bxToast" role="status" aria-live="polite"></div>
+<button class="bx-top" id="bxTopBtn" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  var $ = function(sel, root){ return (root || document).querySelector(sel); };
+  var $$ = function(sel, root){ return Array.prototype.slice.call((root || document).querySelectorAll(sel)); };
+
+  /* ---------- Toast ---------- */
+  var toastEl = $('#bxToast'), toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('is-on'); }, 2200);
+  }
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = $('#bxBurger'), nav = $('#bxNav');
+  if(burger && nav){
+    burger.addEventListener('click', function(){
+      var open = nav.classList.toggle('is-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      burger.setAttribute('aria-label', open ? '收起导航' : '展开导航');
+    });
+    $$('a', nav).forEach(function(a){
+      a.addEventListener('click', function(){
+        if(window.innerWidth <= 900){
+          nav.classList.remove('is-open');
+          burger.classList.remove('is-open');
+          burger.setAttribute('aria-expanded','false');
+        }
+      });
+    });
+  }
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchInput = $('#bxSearchInput'), searchHint = $('#bxSearchHint'), searchForm = $('#bxSearchForm');
+  var searchIndex = [];
+  $$('#bxVideoGrid .bx-video-card').forEach(function(card){
+    var t = $('h3', card);
+    if(t){ searchIndex.push({title: t.textContent.trim(), node: card}); }
+  });
+
+  function runSearch(){
+    var q = (searchInput.value || '').trim();
+    if(!q){
+      searchHint.classList.remove('is-on');
+      return;
+    }
+    var hit = searchIndex.filter(function(item){
+      return item.title.indexOf(q) > -1;
+    });
+    if(hit.length){
+      searchHint.innerHTML = '找到 ' + hit.length + ' 条相关影像，已为你高亮频道列表：' + hit.slice(0,2).map(function(h){
+        return '「' + h.title + '」';
+      }).join('、');
+      searchHint.classList.add('is-on');
+      document.getElementById('bxVideos').scrollIntoView({behavior:'smooth', block:'start'});
+      hit.forEach(function(h){ h.node.style.outline = '2px solid #ff7a9c'; h.node.style.outlineOffset = '3px'; });
+      setTimeout(function(){ hit.forEach(function(h){ h.node.style.outline = ''; }); }, 2600);
+    }else{
+      searchHint.textContent = '暂未找到「' + q + '」相关影像，试试「散步」「剪辑」「布丁」等主题词。';
+      searchHint.classList.add('is-on');
+    }
+  }
+  if(searchForm){
+    searchForm.addEventListener('submit', function(e){ e.preventDefault(); runSearch(); });
+  }
+  if(searchInput){
+    searchInput.addEventListener('input', function(){
+      if(!searchInput.value.trim()){ searchHint.classList.remove('is-on'); }
+    });
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); runSearch(); }
+    });
+  }
+
+  /* ---------- 标签筛选 ---------- */
+  var filterRow = $('#bxFilterRow');
+  if(filterRow){
+    filterRow.addEventListener('click', function(e){
+      var btn = e.target.closest('.bx-filter');
+      if(!btn) return;
+      $$('.bx-filter', filterRow).forEach(function(b){
+        b.classList.remove('is-active');
+        b.setAttribute('aria-selected','false');
+      });
+      btn.classList.add('is-active');
+      btn.setAttribute('aria-selected','true');
+      var cat = btn.getAttribute('data-filter');
+      $$('#bxVideoGrid .bx-video-card').forEach(function(card){
+        var show = (cat === 'all') || (card.getAttribute('data-cat') === cat);
+        card.classList.toggle('is-hidden', !show);
+      });
+    });
+  }
+
+  /* ---------- 点赞 / 收藏 / 分享 ---------- */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-like]');
+    if(likeBtn){
+      var on = likeBtn.getAttribute('aria-pressed') === 'true';
+      var numEl = likeBtn.querySelector('span');
+      var num = numEl ? parseInt(numEl.textContent.replace(/,/g,''),10) || 0 : 0;
+      if(on){
+        likeBtn.setAttribute('aria-pressed','false');
+        likeBtn.classList.remove('is-on');
+        likeBtn.firstChild.nodeValue = '♡ ';
+        if(numEl){ numEl.textContent = (Math.max(0, num - 1)).toLocaleString('en-US'); }
+        toast('已取消喜欢');
+      }else{
+        likeBtn.setAttribute('aria-pressed','true');
+        likeBtn.classList.add('is-on');
+        likeBtn.firstChild.nodeValue = '♥ ';
+        if(numEl){ numEl.textContent = (num + 1).toLocaleString('en-US'); }
+        toast('已喜欢这条影像');
+      }
+      return;
+    }
+
+    var favBtn = e.target.closest('[data-fav]');
+    if(favBtn){
+      var fOn = favBtn.getAttribute('aria-pressed') === 'true';
+      favBtn.setAttribute('aria-pressed', fOn ? 'false' : 'true');
+      favBtn.classList.toggle('is-on', !fOn);
+      favBtn.textContent = fOn ? '☆ 收藏' : '★ 已收藏';
+      toast(fOn ? '已取消收藏' : '已加入收藏夹');
+      return;
+    }
+
+    var shareBtn = e.target.closest('[data-share]');
+    if(shareBtn){
+      openModal('share');
+      return;
+    }
+
+    var creatorBtn = e.target.closest('[data-creator]');
+    if(creatorBtn){
+      var parts = creatorBtn.getAttribute('data-creator').split('|');
+      openModal('creator', parts);
+      return;
+    }
+
+    var modalTrigger = e.target.closest('[data-modal]');
+    if(modalTrigger){
+      openModal(modalTrigger.getAttribute('data-modal'));
+    }
+  });
+
+  /* ---------- 弹窗 ---------- */
+  var mask = $('#bxModalMask'), mTitle = $('#bxModalTitle'), mBody = $('#bxModalBody'), mActions = $('#bxModalActions');
+
+  function openModal(type, data){
+    var title = '提示', body = '', actions = '';
+    if(type === 'share'){
+      title = '分享给朋友';
+      body = '<p>复制页面链接或选择常用渠道，把白桃少女小布丁的官方网站分享给同样喜欢生活影像的人。</p>' +
+             '<div class="bx-share-row">' +
+             '<button class="bx-share-chip" data-copy>复制页面链接</button>' +
+             '<button class="bx-share-chip" data-channel="微信">微信</button>' +
+             '<button class="bx-share-chip" data-channel="微博">微博</button>' +
+             '<button class="bx-share-chip" data-channel="QQ">QQ</button>' +
+             '</div>';
+    }else if(type === 'join'){
+      title = '投稿与报名入口';
+      body = '<p>投稿请准备：作品文件（建议 1080P 起）、创作说明（不少于 150 字）、拍摄动机与署名信息。</p>' +
+             '<p>「甜软记录计划」第二季报名截止 11 月 30 日，报名成功后将收到线上辅导的时段确认。投稿邮箱：submit@baitao-budin.example</p>';
+      actions = '<button class="bx-btn bx-btn-main" data-copy-email="submit">复制投稿邮箱</button>' +
+                '<button class="bx-btn bx-btn-ghost" data-modal-close>稍后再说</button>';
+    }else if(type === 'contact'){
+      title = '联系我们';
+      body = '<p>合作咨询：partner@baitao-budin.example</p>' +
+             '<p>媒体沟通：press@baitao-budin.example</p>' +
+             '<p>工作时间：周一至周五 10:00–19:00，节假日回复可能延后。合作类邮件请简要说明品牌背景与预期目标，我们会尽快安排沟通。</p>';
+      actions = '<button class="bx-btn bx-btn-main" data-copy-email="partner">复制合作邮箱</button>' +
+                '<button class="bx-btn bx-btn-ghost" data-modal-close>关闭</button>';
+    }else if(type === 'creator'){
+      title = (data && data[0]) || '创作者档案';
+      body = '<p style="color:#d95a7d;font-weight:700;">' + ((data && data[1]) || '') + '</p>' +
+             '<p>' + ((data && data[2]) || '') + '</p>' +
+             '<p>如需查看完整作品列表与创作说明，可在影像频道使用作者名搜索。也欢迎通过投稿入口与该创作者交流创作方法。</p>';
+      actions = '<button class="bx-btn bx-btn-main" data-modal-close>知道了</button>';
+    }
+    mTitle.textContent = title;
+    mBody.innerHTML = body;
+    mActions.innerHTML = actions;
+    mask.classList.add('is-on');
+    mask.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal(){
+    mask.classList.remove('is-on');
+    mask.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+  }
+
+  if(mask){
+    mask.addEventListener('click', function(e){
+      if(e.target === mask){ closeModal(); }
+      if(e.target.closest('#bxModalClose')){ closeModal(); }
+      if(e.target.closest('[data-modal-close]')){ closeModal(); }
+
+      var copyBtn = e.target.closest('[data-copy]');
+      if(copyBtn){
+        var link = window.location.href;
+        copyText(link).then(function(){
+          toast('页面链接已复制');
+        }).catch(function(){
+          toast('复制失败，请手动复制地址栏链接');
+        });
+      }
+
+      var chBtn = e.target.closest('[data-channel]');
+      if(chBtn){
+        toast('已准备分享到' + chBtn.getAttribute('data-channel') + '（演示）');
+      }
+
+      var mailBtn = e.target.closest('[data-copy-email]');
+      if(mailBtn){
+        var kind = mailBtn.getAttribute('data-copy-email');
+        var mail = (kind === 'partner') ? 'partner@baitao-budin.example' : 'submit@baitao-budin.example';
+        copyText(mail).then(function(){
+          toast('邮箱已复制：' + mail);
+        }).catch(function(){
+          toast('邮箱：' + mail);
+        });
+      }
+    });
+  }
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && mask && mask.classList.contains('is-on')){ closeModal(); }
+  });
+
+  function copyText(text){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function(resolve, reject){
+      try{
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        resolve();
+      }catch(err){ reject(err); }
+    });
+  }
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = $('#bxTopBtn');
+  if(topBtn){
+    topBtn.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+    window.addEventListener('scroll', function(){
+      topBtn.classList.toggle('is-on', window.scrollY > 620);
+    }, {passive:true});
+  }
+
+  /* ---------- 滚动进入动画 ---------- */
+  var revealEls = $$('.bx-reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          en.target.classList.add('is-in');
+          io.unobserve(en.target);
+        }
+      });
+    }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+    revealEls.forEach(function(el){ io.observe(el); });
+  }else{
+    revealEls.forEach(function(el){ el.classList.add('is-in'); });
+  }
+
+  /* ---------- 数字滚动 ---------- */
+  var counters = $$('[data-count]');
+  function animateCount(el){
+    var target = parseInt(el.getAttribute('data-count'),10) || 0;
+    var cur = 0, step = Math.max(1, Math.round(target / 34));
+    var timer = setInterval(function(){
+      cur += step;
+      if(cur >= target){
+        cur = target;
+        clearInterval(timer);
+      }
+      el.textContent = cur.toLocaleString('en-US') + (target === 92 ? '' : '');
+      if(target === 92){ el.textContent = cur + ''; }
+    }, 26);
+  }
+  if('IntersectionObserver' in window){
+    var io2 = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          animateCount(en.target);
+          io2.unobserve(en.target);
+        }
+      });
+    }, {threshold:0.5});
+    counters.forEach(function(el){ io2.observe(el); });
+  }
+})();
+</script>
+</body>
+                </html>
